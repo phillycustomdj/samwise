@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>In Memory of Sam Conterato</title>
+
+<!-- ============================================================
+     TO FINISH: paste your Google Drive photo-folder link where
+     marked "GOOGLE_DRIVE_FOLDER_URL" below. Everything else is set.
+
+     Then commit this file as index.html to a GitHub repo and
+     enable Pages (Settings > Pages > Deploy from main / root).
+
+     NOTE: for people to add songs, open the Spotify playlist,
+     tap the "..." menu, and turn ON "Collaborative playlist".
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #d7d7d7;          /* heather gray */
+    --bg-card: #ffffff;
+    --text: #141414;        /* black */
+    --text-soft: #5a5a5a;   /* gray */
+    --accent: #141414;
+    --line: #cfcfcf;
+    --heather: #9a9a9a;
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.10);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 20px 64px;
+  }
+
+  /* ── Header ── */
+  header {
+    text-align: center;
+    padding: 76px 20px 44px;
+  }
+  .flourish {
+    color: var(--heather);
+    font-size: 22px;
+    letter-spacing: 8px;
+    margin-bottom: 22px;
+  }
+  header .kicker {
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-soft);
+    margin-bottom: 14px;
+  }
+  header h1 {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    color: var(--text);
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 30px 28px;
+    margin-bottom: 24px;
+  }
+  .card h2 {
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: -0.2px;
+    margin-bottom: 18px;
+    text-align: center;
+    color: var(--text);
+  }
+
+  /* ── Service details ── */
+  .detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .detail-row:last-child { border-bottom: none; }
+  .detail-row .ico {
+    flex: 0 0 22px;
+    font-size: 17px;
+    line-height: 1.5;
+    opacity: 0.65;
+    text-align: center;
+    filter: grayscale(1);
+  }
+  .detail-row .lbl {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-soft);
+    margin-bottom: 3px;
+  }
+  .detail-row .val { font-size: 16px; }
+  .detail-row a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--heather);
+  }
+
+  /* ── Buttons ── */
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .btn:active { transform: scale(0.99); }
+  .btn-primary {
+    background: var(--text);
+    color: #fff;
+  }
+  .btn-secondary {
+    background: #6a6a6a;   /* gray */
+    color: #fff;
+  }
+  .btn:hover { opacity: 0.9; }
+  .btn + .btn { margin-top: 14px; }
+  .card p.help {
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 14.5px;
+    margin-bottom: 20px;
+  }
+
+  /* ── Questions ── */
+  .contact {
+    text-align: center;
+    font-size: 15.5px;
+    color: var(--text-soft);
+  }
+  .contact a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid var(--heather);
+    white-space: nowrap;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 13px;
+    padding-top: 24px;
+    opacity: 0.75;
+  }
+  footer .flourish { font-size: 18px; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ============ HEADER ============ -->
+    <header>
+      <div class="flourish">— ✦ —</div>
+      <div class="kicker">In Loving Memory</div>
+      <h1>Sam Conterato</h1>
+    </header>
+
+    <!-- ============ SERVICE DETAILS ============ -->
+    <div class="card">
+      <h2>Memorial Service</h2>
+
+      <div class="detail-row">
+        <div class="ico">📅</div>
+        <div>
+          <div class="lbl">Day &amp; Date</div>
+          <div class="val">Saturday, July 18, 2026</div>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="ico">🕓</div>
+        <div>
+          <div class="lbl">Time</div>
+          <div class="val">1:00 – 5:00 PM</div>
+        </div>
+      </div>
+
+      <div class="detail-row">
+        <div class="ico">📍</div>
+        <div>
+          <div class="lbl">Location</div>
+          <div class="val">
+            Other Half Brewing Philadelphia<br />
+            <a href="https://www.google.com/maps/search/?api=1&query=Other%20Half%20Brewing%20Philadelphia%2C%201002%20Canal%20St%2C%20Philadelphia%2C%20PA%2019123" target="_blank" rel="noopener">
+              1002 Canal St, Philadelphia, PA 19123
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PHOTOS + PLAYLIST ============ -->
+    <div class="card">
+      <h2>Share &amp; Remember</h2>
+      <p class="help">Add a photo to our shared album, or add a song to the playlist we'll be listening to.</p>
+
+      <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1dpktkPDF7u3ZpRPeH2kwaII5YDH4USaQ" target="_blank" rel="noopener">
+        Add Your Photos
+      </a>
+
+      <a class="btn btn-secondary" href="https://open.spotify.com/playlist/00sEFxc5JoKvFNXc8HO53F?si=80a8644e59d644ac&pt=716ccba4689464d61b5fda13eb329752" target="_blank" rel="noopener">
+        Listen to / Add to the Playlist
+      </a>
+    </div>
+
+    <!-- ============ QUESTIONS ============ -->
+    <div class="card">
+      <h2>Questions?</h2>
+      <p class="contact">
+        Reach Adam anytime —<br />
+        <a href="tel:+19179512400">917-951-2400</a><br />
+        <a href="mailto:adam@phillycustomdj.com">adam@phillycustomdj.com</a>
+      </p>
+    </div>
+
+    <footer>
+      <div class="flourish">✦</div>
+      With love and remembrance.
+    </footer>
+
+  </div>
+</body>
+</html>
